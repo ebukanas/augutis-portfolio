@@ -10,7 +10,8 @@
     }
 
     .navbar .logo {
-        width: 150px;
+        width: 120px;
+        margin-top: 10px;
     }
 
     .hero-section {
@@ -78,17 +79,16 @@
     }
 
     .jumbotron h1 {
-        font-size: 17vw;
+        font-size: xxx-large;
         letter-spacing: -2px;
         line-height: 1em;
     }
 
     .jumbotron h3 {
-        font-size: 5vw;
+        font-size: large;
         letter-spacing: 0px;
         text-align: center;
         width: 100%;
-        margin-top: -40px;
     }
 
     .hero-section {

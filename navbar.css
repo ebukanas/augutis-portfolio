@@ -16,8 +16,8 @@
 
 .line {
     position: absolute;
-    width: 38px;
-    height: 4px;
+    width: 33px;
+    height: 3px;
     transition: all 0.3s ease-out;
 }
 
