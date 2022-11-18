@@ -76,7 +76,7 @@
         margin-left: 0px;
         text-align: center;
         margin-top: 40%;
-        background: url(/images/jumbo-text2.png);
+        background: url(/images/jumbo-text3.png);
         background-size: contain;
         height: 240px;
         background-repeat: no-repeat;
@@ -116,7 +116,6 @@
 
     .work-container .description span {
         width: 100%;
-        color: gray;
     }
 
 }
