@@ -76,8 +76,8 @@
         margin-left: 0px;
         text-align: center;
         margin-top: 40%;
-        background: url(/images/jumbo-text.png);
-        background-size: auto;
+        background: url(/images/jumbo-text2.png);
+        background-size: contain;
         height: 240px;
         background-repeat: no-repeat;
         background-position: center;
