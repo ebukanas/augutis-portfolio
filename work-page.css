@@ -1,0 +1,133 @@
+.work-page-container {
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr 1fr; 
+    grid-template-rows: 0.2fr 1.8fr 0.6fr 0.6fr; 
+    gap: 0px 15px; 
+    grid-template-areas: 
+      "title1 title2 title3 title4"
+      "work1 work2 work3 work4"
+      "desc1 desc2 desc3 desc4"
+      "btn1 btn2 btn3 btn4"; 
+      height: 79vh;
+      padding: 3em;
+  }
+
+.navbar {
+    position: relative;
+}
+
+.whitespace a::before {
+    border-bottom: 2px solid black;
+    height: 10px;
+    width: 70px;
+    content: "";
+    display: block;
+    position: absolute;
+    margin: 8px 0px 0px 34px;
+}
+
+.logo {
+    background: url(/images/logo.png) no-repeat;
+    background-size: contain;
+    width: 200px;
+    height: 50px;
+}
+
+.contact span:first-child::before {
+    content: "";
+    display: block;
+    background: url(/images/email.png) no-repeat;
+    background-size: contain;
+    width: 14px;
+    height: 14px;
+    float: left;
+    margin-right: 9px;
+}
+
+.contact span:last-child::before {
+    content: "";
+    display: block;
+    background: url(/images/phone-call.png) no-repeat;
+    background-size: contain;
+    width: 14px;
+    height: 14px;
+    float: left;
+    margin-right: 9px;
+}
+
+.work {
+    border: 2px solid black;
+}
+
+.title {
+    font-family: 'Inter', sans-serif;
+    height: auto;
+    font-size: 0.6em;
+}
+
+.title h1 {
+    margin: 23px 0px 0px 0px
+}
+
+.work1 { 
+    grid-area: work1;
+    background-image: url(/images/galva7.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.work2 { 
+    grid-area: work2; 
+    background-image: url(/images/chebureki54.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.work3 { 
+    grid-area: work3;
+    background-image: url(/images/skulptura8.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.work4 { 
+    grid-area: work4;
+    background-image: url(/images/silainiai.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.desc {
+    font-family: 'Inter', sans-serif;
+    color: gray;
+    display: flex;
+    align-items: center;
+    line-height: 1.3;
+}
+
+.desc1 { grid-area: desc1; }
+.desc2 { grid-area: desc2; }
+.desc3 { grid-area: desc3; }
+.desc4 { grid-area: desc4; }
+
+.CTA-btn button {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0);
+    padding: 0.5em 2em;
+    width: 100%;
+    border-style: solid;
+    border-color: black;
+    font-size: 1.5em;
+    font-family: 'Inter', sans-serif;
+    cursor: pointer;
+}
+
+.btn1 { grid-area: btn1; }
+.btn2 { grid-area: btn2; }
+.btn3 { grid-area: btn3; }
+.btn4 { grid-area: btn4; }
+
+.title1 { grid-area: title1; }
+.title2 { grid-area: title2; }
+.title3 { grid-area: title3; }
+.title4 { grid-area: title4; }

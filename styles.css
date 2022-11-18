@@ -1,0 +1,275 @@
+:root {
+--purple: #392c42;
+}
+
+@font-face {
+    font-family: 'Futura';
+    src:url('Futura Condensed Extra Bold.otf')
+}
+
+@font-face {
+    font-family: 'Futura_Light';
+    src:url('/futura/Futura-Light.ttf')
+}
+
+@font-face {
+    font-family: 'Futura-Book';
+    src:url('/fonts/Futura-Book.ttf')
+}
+
+html,body {
+    scroll-snap-type: y mandatory;
+    font-size: 12px;
+}
+
+section {
+    height: 100vh;
+    scroll-snap-align: center;
+}
+
+.hero-section {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--purple);
+    height: 100%;
+    background-image: url(images/statue.PNG);
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: 120%;
+}
+
+.navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    padding: 3em;
+    box-sizing: border-box;
+}
+
+.contact {
+    display: grid;
+    font-family: 'Inter', sans-serif;
+    height: 50px;
+}
+
+.contact img {
+    width: 14px;
+    margin-right: 7px;
+    margin-bottom: -3px;
+}
+
+.whitespace {
+    width: 100px;
+    text-align: right;
+}
+
+.whitespace a {
+    font-family: 'Inter', sans-serif;
+    font-size: 1.4em;
+    color: black;
+    text-decoration: none;
+}
+
+.navbar .logo img {
+    width: 240px;
+}
+
+.mobile-nav {
+    display: none;
+}
+
+.mobile-nav-items {
+    display: none;
+}
+
+/* -----------END OF NAVBAR------------ */
+
+.jumbotron {
+    margin-left: 3em;
+}
+
+.jumbotron h1 {
+    font-family: Futura;
+    color: var(--purple);
+    letter-spacing: -5px;
+    line-height: 0.9em;
+    word-spacing: -9px;
+    font-size: 10vw;
+    text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white;
+}
+
+.jumbotron h3 {
+    font-family: 'Futura_Light';
+    color: white;
+    width: 50%;
+    margin-top: -6%;
+    font-size: 2vw;
+}
+
+.CTA {
+    height: auto;
+    margin-top: -80px;
+    left: 0;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+
+.CTA button {
+    color: white;
+    background-color: rgba(255, 255, 255, 0);
+    padding: 0.5em 2em;
+    border-style: solid;
+    font-size: 1.5em;
+    font-family: 'Inter', sans-serif;
+}
+
+.work-whitespace {
+    height: 20vh;
+}
+
+.work-container {
+    height: 70%;
+    width: auto;
+    margin: 0 3em;
+}
+
+.work-container h1 {
+    font-family: 'Futura-Book';
+    font-size: 4vw;
+    margin: 0em 0em 10px 0em;
+}
+
+.work1-image {
+    height: 50vh;
+    background-image: url(images/chebureki54.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    outline: 2px solid black;
+}
+
+.work2-image {
+    height: 50vh;
+    background-image: url(images/galva10.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    outline: 2px solid black;
+}
+
+.work-container .description {
+    margin-top: 1em;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Inter', sans-serif;
+    font-size: 1.2em;
+}
+
+.work-container .description span {
+    width: 70%;
+}
+
+.work-container .description button {
+    border-style: none;
+    background-color: rgba(255, 255, 255, 0);
+    outline: 2px solid black;
+    padding: 0em 2em;
+    height: 30px;
+}
+
+
+
+/* ----------DATA STYLES---------- */
+
+[data-theme="purple"] {
+    color: white;
+}
+
+[data-theme="white"] {
+    color: black;
+}
+
+[data-email="purple"]::before {
+    content: "";
+    display: block;
+    background: url(/images/email_white.png) no-repeat;
+    background-size: contain;
+    width: 14px;
+    height: 14px;
+    float: left;
+    margin-right: 9px;
+}
+
+[data-email="white"]::before {
+    content: "";
+    display: block;
+    background: url(/images/email.png) no-repeat;
+    background-size: contain;
+    width: 14px;
+    height: 14px;
+    float: left;
+    margin-right: 9px;
+}
+
+[data-phone="purple"]::before {
+    content: "";
+    display: block;
+    background: url(/images/phone-call_white.png) no-repeat;
+    background-size: contain;
+    width: 14px;
+    height: 14px;
+    float: left;
+    margin-right: 9px;
+}
+
+[data-phone="white"]::before {
+    content: "";
+    display: block;
+    background: url(/images/phone-call.png) no-repeat;
+    background-size: contain;
+    width: 14px;
+    height: 14px;
+    float: left;
+    margin-right: 9px;
+}
+
+[data-logo="white"] {
+    background: url(/images/logo.png) no-repeat;
+    background-size: contain;
+    width: 200px;
+    height: 50px;
+}
+
+[data-logo="purple"] {
+    background: url(/images/logo_white.png) no-repeat;
+    background-size: contain;
+    width: 200px;
+    height: 50px;
+}
+
+[data-hide="purple"] {
+    visibility: hidden;
+}
+
+[data-hide="white"] {
+    visibility:unset;
+}
+
+[data-nav="white"] {
+    background-color: black;
+}
+
+[data-nav="purple"] {
+    background-color: white;
+}
+
+
+
