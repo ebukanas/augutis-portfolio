@@ -75,13 +75,19 @@
     .jumbotron {
         margin-left: 0px;
         text-align: center;
-        margin-top: 20%;
+        margin-top: 40%;
+        background: url(/images/jumbo-text.png);
+        background-size: auto;
+        height: 240px;
+        background-repeat: no-repeat;
+        background-position: center;
     }
 
     .jumbotron h1 {
         font-size: xxx-large;
         letter-spacing: -2px;
         line-height: 1em;
+        display: none;
     }
 
     .jumbotron h3 {
@@ -89,6 +95,7 @@
         letter-spacing: 0px;
         text-align: center;
         width: 100%;
+        display: none;
     }
 
     .hero-section {
