@@ -20,6 +20,7 @@
         background-position: 10px;
         background-position-y: center;
         background-position-y: bottom;
+        flex-direction: flex-start;
     }
 
     .whitespace {
@@ -75,7 +76,6 @@
     .jumbotron {
         margin-left: 0px;
         text-align: center;
-        margin-top: 40%;
         background: url(/images/jumbo-text3.png);
         background-size: contain;
         height: 240px;
@@ -96,10 +96,6 @@
         text-align: center;
         width: 100%;
         display: none;
-    }
-
-    .hero-section {
-        justify-content: flex-start;
     }
 
     .work-container h1 {
