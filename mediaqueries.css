@@ -7,18 +7,17 @@
         margin-right: 10px;
     }
 
-    .navbar .contact {
+    header .contact {
         display: none;
     }
 
-    .navbar {
+    header {
         padding: 1em;
     }
 
-    .navbar .logo {
+    header .logo {
         width: 120px;
-        margin-top: 20px;
-        margin-left: 10px;
+        margin-left: 5px;
     }
 
     .hero-section {

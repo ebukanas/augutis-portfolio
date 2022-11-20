@@ -20,7 +20,7 @@
 </head>
 <body>
 <main>
-    <header class="navbar" data-header>
+    <header data-header>
       <div class="contact">
         <span>augustinas.pietaris@gmail.com</span>
         <span>+370 63 677 026</span>
@@ -30,14 +30,22 @@
       <div class="whitespace">
         <a href="work-page.html">DARBAI</a>
       </div>
-        <input id="checkbox" type="checkbox">
-        <label for="checkbox" class="hamburger">
-          <span class="line line--top" data-nav></span>
-          <span class="line line--middle" data-nav></span>
-          <span class="line line--bottom" data-nav></span>
-        </label>
-        <div class="mobile-nav-menu">
-          
+
+      <nav role="navigation">
+        <div id="menuToggle">
+          <input type="checkbox" />
+            <span></span>
+            <span></span>
+            <span></span>
+        <ul id="menu">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Info</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+       </div>
+      </nav>
+
         </div>
     </header>
 

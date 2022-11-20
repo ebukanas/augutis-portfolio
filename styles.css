@@ -44,53 +44,8 @@ section {
     background-blend-mode: hard-light;
 }
 
-.navbar {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: fixed;
-    padding: 3em;
-    box-sizing: border-box;
-}
+/* ---------NAVBAR---------- */
 
-.contact {
-    display: grid;
-    font-family: 'Inter', sans-serif;
-    height: 50px;
-}
-
-.contact img {
-    width: 14px;
-    margin-right: 7px;
-    margin-bottom: -3px;
-}
-
-.whitespace {
-    width: 100px;
-    text-align: right;
-}
-
-.whitespace a {
-    font-family: 'Inter', sans-serif;
-    font-size: 1.4em;
-    color: black;
-    text-decoration: none;
-}
-
-.navbar .logo img {
-    width: 240px;
-}
-
-.mobile-nav-menu {
-    height: 100vh;
-    position: absolute;
-    background-color: red;
-    width: 100vw;
-    top: 0;
-    left: 0;
-    opacity: 50%;
-}
 
 
 /* -----------END OF NAVBAR------------ */
