@@ -6,6 +6,20 @@ const phone = document.querySelector('.contact span:last-child')
 const workHide = document.querySelector('.whitespace')
 const hamburgerMenu = document.querySelectorAll('.line')
 
+//mobile responsiveness height hack
+let timeoutId = null;
+const documentHeight = () => {
+  clearTimeout(timeoutId); // avoid execution of previous timeouts
+  timeoutId = setTimeout(() => {
+   const doc = document.documentElement;
+   doc.style.setProperty('--doc-height', `${window.innerHeight}px`)
+  }, 200);
+};
+window.addEventListener('resize', documentHeight);
+documentHeight();
+// ----
+
+
 let prevYPosition = 0
 let direction = 'up'
 

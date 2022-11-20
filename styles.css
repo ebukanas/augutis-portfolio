@@ -1,6 +1,7 @@
 :root {
 --purple: #392c42;
 --gray: rgb(99, 99, 99);
+--doc-height: 100%;
 }
 
 @font-face {
@@ -25,6 +26,7 @@ html,body {
 
 section {
     height: 100vh;
+    height: var(--doc-height);
     scroll-snap-align: center;
 }
 
@@ -80,13 +82,16 @@ section {
     width: 240px;
 }
 
-.mobile-nav {
-    display: none;
+.mobile-nav-menu {
+    height: 100vh;
+    position: absolute;
+    background-color: red;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    opacity: 50%;
 }
 
-.mobile-nav-items {
-    display: none;
-}
 
 /* -----------END OF NAVBAR------------ */
 
@@ -101,7 +106,7 @@ section {
     line-height: 0.9em;
     word-spacing: -9px;
     font-size: 10vw;
-    text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white;
+    text-shadow: -2px -2px 0 white, 2px -2px 0 white, -2px 2px 0 white, 2px 1px 0 white;
 }
 
 .jumbotron h3 {
