@@ -43,6 +43,15 @@ const getTargetSection = (entry) => {
 	}
 }
 
+//sets the default header colors to white on load
+window.addEventListener("load", () => {
+	logo.setAttribute('data-logo', "purple")
+	mobile_nav_menu_toggle.forEach((obj) => {
+		obj.setAttribute('data-mobile_menu_lines', "purple");
+	})
+})
+
+
 const updateColors = (target) => {
 	const theme = target.dataset.section
 	header.setAttribute('data-theme', theme)

@@ -27,8 +27,13 @@ html,body {
 section {
     height: 100vh;
     height: var(--doc-height);
+    border-bottom: 2px solid black;
 }
 
+#hero {
+    border-bottom: none;
+}
+ 
 .hero-section {
     height: 100%;
     display: flex;
@@ -92,11 +97,10 @@ section {
 }
 
 .work-whitespace {
-    height: 20vh;
+    height: 15vh;
 }
 
 .work-container {
-    height: 70%;
     width: auto;
     margin: 0 3em;
 }
@@ -235,7 +239,7 @@ section {
 }
 
 [data-mobile_nav_menu="purple"] {
-    background-color: var(--light-purple);
+    background-color: #22182a;
 }
 
 [data-mobile_nav_menu="white"] {
