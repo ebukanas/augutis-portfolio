@@ -1,10 +1,15 @@
 const header = document.querySelector('[data-header]')
 const sections = [...document.querySelectorAll('[data-section]')]
 const logo = document.querySelector('.logo')
-const email = document.querySelector('.contact span:first-child')
-const phone = document.querySelector('.contact span:last-child')
+const email = document.querySelectorAll('.email-logo')
+const phone = document.querySelectorAll('.phone-logo')
 const workHide = document.querySelector('.whitespace')
 const hamburgerMenu = document.querySelectorAll('.line')
+const mobile_nav_menu = document.querySelector('#menu')
+const mobile_nav_menu_toggle = document.querySelectorAll('.menu-lines')
+const mobile_nav_menu_toggle_checked = document.querySelector('#menuToggle input:checked ~ span');
+
+
 
 //mobile responsiveness height hack
 let timeoutId = null;
@@ -41,10 +46,22 @@ const getTargetSection = (entry) => {
 const updateColors = (target) => {
 	const theme = target.dataset.section
 	header.setAttribute('data-theme', theme)
-	email.setAttribute('data-email', theme)
-	phone.setAttribute('data-phone', theme)
 	logo.setAttribute('data-logo', theme)
-	workHide.setAttribute('data-hide', theme);
+	workHide.setAttribute('data-hide', theme)
+	mobile_nav_menu.setAttribute('data-mobile_nav_menu', theme)
+
+	mobile_nav_menu_toggle.forEach((obj) => {
+		obj.setAttribute('data-mobile_menu_lines', theme);
+	})
+
+	email.forEach((obj) => {
+		obj.setAttribute('data-email', theme);
+	})
+
+	phone.forEach((obj) => {
+		obj.setAttribute('data-phone', theme);
+	})
+
 	hamburgerMenu.forEach((obj) => {
 		obj.setAttribute('data-nav', theme);
 	})

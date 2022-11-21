@@ -1,7 +1,8 @@
 :root {
---purple: #392c42;
---gray: rgb(99, 99, 99);
---doc-height: 100%;
+    --purple: #392c42;
+    --gray: rgb(99, 99, 99);
+    --doc-height: 100%;
+    --light-purple: #835d9c;
 }
 
 @font-face {
@@ -20,14 +21,12 @@
 }
 
 html,body {
-    scroll-snap-type: y mandatory;
     font-size: 12px;
 }
 
 section {
     height: 100vh;
     height: var(--doc-height);
-    scroll-snap-align: center;
 }
 
 .hero-section {
@@ -76,7 +75,6 @@ section {
     height: auto;
     margin-top: -80px;
     left: 0;
-    position: absolute;
     margin-left: auto;
     margin-right: auto;
     left: 0;
@@ -236,5 +234,26 @@ section {
     background-color: white;
 }
 
+[data-mobile_nav_menu="purple"] {
+    background-color: var(--light-purple);
+}
 
+[data-mobile_nav_menu="white"] {
+    background-color: white;
+}
 
+[data-mobile_menu_lines="white"] {
+    background: black;
+}
+
+[data-mobile_menu_lines="purple"] {
+    background: white;
+}
+
+[data-mobile_menu_lines_checked="purple"] {
+    background: white;
+}
+
+[data-mobile_menu_lines_checked="white"] {
+    background: black;
+}
